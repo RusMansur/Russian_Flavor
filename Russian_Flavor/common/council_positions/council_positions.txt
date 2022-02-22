@@ -1,0 +1,313 @@
+### Russian Councillors ###
+
+# Канцлер #
+councillor_chancellor = { 
+	skill = diplomacy
+	tooltip = game_concept_chancellor_desc
+	
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {scope:councillor_liege = {has_culture_group = culture_group:east_slavic_group}}
+				desc = councillor_chancellor_russian
+			}
+			desc = councillor_chancellor
+		}
+	}
+	
+	modifier = {
+		name = councillor_chancellor_modifier
+		fellow_vassal_opinion = 5
+		monthly_diplomacy_lifestyle_xp_gain_mult = 0.05
+		scale = council_scaled_by_liege_tier
+	}
+
+	modifier = {
+		name = councillor_chancellor_modifier
+		monthly_prestige = 1
+		scale = council_scaled_monthly_income
+	}
+
+	council_owner_modifier = {
+		name = learn_on_the_job_modifier
+		diplomacy = 1
+		scale = chancellor_learn_on_the_job_scale
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_chancellor_trigger = { COURT_OWNER = root.liege_or_court_owner }
+	}
+
+	on_get_position = {
+		got_council_position_effect = yes
+	}
+
+	on_fired_from_position = {
+		fired_from_council_position_effect = yes
+	}
+
+	portrait_animation = chancellor
+}
+
+# Управляющий #
+councillor_steward = {
+	skill = stewardship
+	tooltip = game_concept_steward_desc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {scope:councillor_liege = {has_culture_group = culture_group:east_slavic_group}}
+				desc = councillor_steward_russian
+			}
+			desc = councillor_steward
+		}
+		
+	}
+	modifier = {
+		name = councillor_steward_modifier
+		monthly_income = 1
+		scale = council_scaled_monthly_income
+	}
+
+	modifier = {
+		name = councillor_steward_modifier
+		build_gold_cost = -0.05
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+		domain_tax_mult = 0.05
+		scale = council_scaled_by_liege_tier
+	}
+
+	council_owner_modifier = {
+		name = learn_on_the_job_modifier
+		stewardship = 1
+		scale = steward_learn_on_the_job_scale
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_steward_trigger = { COURT_OWNER = root.liege_or_court_owner }
+	}
+
+	on_get_position = {
+		got_council_position_effect = yes
+	}
+
+	on_fired_from_position = {
+		fired_from_council_position_effect = yes
+	}
+
+	portrait_animation = steward
+}
+
+# Маршал
+
+councillor_marshal = {	
+	skill = martial
+	tooltip = game_concept_marshal_desc
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {scope:councillor_liege = {has_culture_group = culture_group:east_slavic_group}}
+				desc = councillor_marshal_russian
+			}
+			desc = councillor_marshal
+		}
+	}
+	modifier = {
+		name = councillor_marshal_modifier
+		prowess = 1
+		army_maintenance_mult = -0.05
+		monthly_martial_lifestyle_xp_gain_mult = 0.05
+		levy_size = 0.05
+		scale = council_scaled_by_liege_tier
+	}
+
+	council_owner_modifier = {
+		name = learn_on_the_job_modifier
+		martial = 1
+		scale = marshal_learn_on_the_job_scale
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_marshal_trigger = { COURT_OWNER = root.liege_or_court_owner }
+	}
+
+	on_get_position = {
+		got_council_position_effect = yes
+	}
+
+	on_fired_from_position = {
+		fired_from_council_position_effect = yes
+	}
+
+	portrait_animation = marshal
+}
+
+# Супруг/Супруга
+
+councillor_spouse = {
+	special_council_position = yes
+	auto_fill = yes
+	can_fire = no
+	can_reassign = no
+	
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { is_male = yes }
+				desc = {
+					first_valid = {
+						triggered_desc = {
+							trigger = {
+								scope:councillor_liege.highest_held_title_tier = tier_county
+								scope:councillor_liege = {
+									OR = {
+										has_government = feudal_government
+										has_government = tribal_government										
+									}
+									has_culture_group = culture_group:east_slavic_group
+								}
+							}
+							desc = russian_boyarin
+						}
+						triggered_desc = {
+							trigger = {
+								scope:councillor_liege.highest_held_title_tier = tier_duchy
+								scope:councillor_liege = {
+									OR = {
+										has_government = feudal_government
+										has_government = tribal_government
+									}
+									has_culture_group = culture_group:east_slavic_group
+								}
+							}
+							desc = russian_knyaz
+						}
+						triggered_desc = {
+							trigger = {
+								scope:councillor_liege.highest_held_title_tier = tier_kingdom
+								scope:councillor_liege = {
+									OR = {
+										has_government = feudal_government
+										has_government = tribal_government
+									}
+									has_culture_group = culture_group:east_slavic_group
+								}
+							}
+							desc = russian_kingdom_knyaz
+						}
+						triggered_desc = {
+							trigger = {
+								scope:councillor_liege.highest_held_title_tier = tier_empire
+								scope:councillor_liege = {
+									OR = {
+										has_government = feudal_government
+										has_government = tribal_government
+									}
+									has_culture_group = culture_group:east_slavic_group
+								}
+							}
+							desc = russian_tsar
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege.highest_held_title_tier = tier_county
+					scope:councillor_liege = {
+						OR = {
+							has_government = feudal_government
+							has_government = tribal_government										
+						}
+						has_culture_group = culture_group:east_slavic_group
+					}
+				}
+				desc = councillor_spouse_boyarinya
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege.highest_held_title_tier = tier_duchy
+					scope:councillor_liege = {
+						OR = {
+							has_government = feudal_government
+							has_government = tribal_government										
+						}
+						has_culture_group = culture_group:east_slavic_group
+					}
+				}
+				desc = councillor_spouse_knyaginya
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege.highest_held_title_tier = tier_kingdom
+					scope:councillor_liege = {
+						OR = {
+							has_government = feudal_government
+							has_government = tribal_government										
+						}
+						has_culture_group = culture_group:east_slavic_group
+					}
+				}
+				desc = councillor_spouse_kingdom_knyaginya
+			}
+			triggered_desc = {
+				trigger = {
+					scope:councillor_liege.highest_held_title_tier = tier_empire
+					scope:councillor_liege = {
+						OR = {
+							has_government = feudal_government
+							has_government = tribal_government										
+						}
+						has_culture_group = culture_group:east_slavic_group
+					}
+				}
+				desc = councillor_spouse_tsaritsa
+			}
+		}
+	}
+tooltip = game_concept_spouse_desc
+
+	valid_position = {
+		any_spouse = {
+			OR = {
+				court_owner = root
+				AND = {
+					is_ruler = yes
+					exists = liege
+					liege = root
+				}
+			}
+		}
+	}
+
+	valid_character = {
+		exists = liege
+		can_be_spouse_councillor_trigger = { COUNCIL_OWNER = liege }
+	}
+
+	on_get_position = {
+		set_variable = {
+			name = councillor_spouse_lifestyle_progress
+			value = 0
+		}
+		if = {
+			limit = {
+				primary_spouse.primary_title = title:e_hre
+			}
+			debug_log = "Set new Spouse council position"
+			debug_log_scopes = yes
+		}
+		trigger_event = councillor_spouse_background.0001
+	}
+
+	on_lose_position = {
+		remove_variable = councillor_spouse_lifestyle_progress
+	}
+
+	on_fired_from_position = {
+		remove_variable = councillor_spouse_lifestyle_progress
+	}
+}
