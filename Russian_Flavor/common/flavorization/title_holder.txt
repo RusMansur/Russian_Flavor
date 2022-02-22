@@ -403,6 +403,15 @@ duke_female_turkish = {
 	governments = { clan_government tribal_government }
 	heritages = ( heritage_mongolic heritage_turkic )
 }
+duke_male_child_turkish {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 45
+	governments = { clan_government tribal_government }
+	heritages = { heritage_mongolic heritage_turkic }
+}
 
 # ### Frankish titulature
 
