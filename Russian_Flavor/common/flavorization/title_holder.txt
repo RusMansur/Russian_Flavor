@@ -49,7 +49,6 @@ russian_namestnik = {
 	priority = 20
 	governments = { feudal_government }
 	heritages = { heritage_east_slavic }
-	religions = { christianity_religion }
 	top_liege = no
 }
 	
