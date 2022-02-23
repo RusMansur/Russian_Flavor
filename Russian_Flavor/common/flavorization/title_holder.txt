@@ -55,7 +55,7 @@ russian_namestnik = {
 	
 # County
 
-count_male_russian = { #Боярин
+count_tribal_male_russian = { #Боярин
 	type = character
 	gender = male
 	special = holder
@@ -64,7 +64,7 @@ count_male_russian = { #Боярин
 	governments = { tribal_government }
 	heritages = { heritage_east_slavic }
 }
-count_female_russian = { #Боярыня
+count_tribal_female_russian = { #Боярыня
 	type = character
 	gender = female
 	special = holder
@@ -73,7 +73,7 @@ count_female_russian = { #Боярыня
 	governments = { tribal_government }
 	heritages = { heritage_east_slavic }
 }
-count_male_child_russian { #Барчук
+count_tribal_male_child_russian { #Барчук
 	type = character
 	gender = male
 	special = ruler_child
@@ -83,7 +83,7 @@ count_male_child_russian { #Барчук
 	priority = 25
 	top_liege = no
 }
-count_female_child_russian { #Боярышня
+count_tribal_female_child_russian { #Боярышня
 	type = character
 	gender = female
 	special = ruler_child
@@ -93,7 +93,7 @@ count_female_child_russian { #Боярышня
 	priority = 25
 	top_liege = no
 }
-county_russian = { #Вотчина
+county_tribal_russian = { #Вотчина
 	type = title
 	tier = county
 	priority = 30
@@ -119,7 +119,7 @@ count_feudal_female_russian = { #Удельная княгиня
 	governments = { feudal_government }
 	heritages = { heritage_east_slavic }
 }
-county_feudal_male_child_russian = { #Княжич
+count_feudal_male_child_russian = { #Княжич
 	type = character
 	gender = male
 	special = ruler_child
@@ -129,7 +129,7 @@ county_feudal_male_child_russian = { #Княжич
 	heritages = { heritage_east_slavic }
 	top_liege = no
 }
-county_feudal_female_child_russian = { #Княжна
+count_feudal_female_child_russian = { #Княжна
 	type = character
 	gender = female
 	special = ruler_child
@@ -139,7 +139,7 @@ county_feudal_female_child_russian = { #Княжна
 	heritages = { heritage_east_slavic }
 	top_liege = no
 }
-county_feudal_russian = { #Удел
+county_feudal_russian = { #Удельное княжество
 	type = title
 	tier = county
 	priority = 40
@@ -150,7 +150,7 @@ county_feudal_russian = { #Удел
 # Duchy
 ##Tribal
 
-duke_tribal_male_russian = {
+duke_male_russian = {
 	type = character
 	gender = male
 	special = holder
@@ -159,7 +159,7 @@ duke_tribal_male_russian = {
 	governments = { tribal_government }
 	heritages = { heritage_east_slavic }
 }
-duke_tribal_female_russian = {
+duke_female_russian = {
 	type = character
 	gender = female
 	special = holder
@@ -189,7 +189,7 @@ duke_female_child_russian {
 	heritages = { heritage_east_slavic }
 	top_liege = no
 }
-duchy_tribal_russian = {
+duchy_russian = {
 	type = title
 	tier = duchy
 	priority = 50
@@ -341,13 +341,7 @@ baron_female_turkish = {
 }
 
 # Сounty
-county_turkish = {
-	type = title
-	tier = county
-	priority = 40
-	governments = { clan_government tribal_government }
-	heritages = { heritage_mongolic heritage_turkic }
-}
+
 count_male_turkish = {
 	type = character
 	gender = male
@@ -372,6 +366,13 @@ count_male_child_turkish = {
 	special = holder
 	tier = county
 	priority = 35
+	governments = { clan_government tribal_government }
+	heritages = { heritage_mongolic heritage_turkic }
+}
+county_turkish = {
+	type = title
+	tier = county
+	priority = 40
 	governments = { clan_government tribal_government }
 	heritages = { heritage_mongolic heritage_turkic }
 }

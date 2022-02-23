@@ -29,6 +29,9 @@
 
  knight_champion_no_tooltip:0 "Воитель"
  knight_champion_no_tooltip_plural:0 "Воители"
+ 
+ knight_vityaz_no_tooltip:0 "Витязь"
+ knight_vityaz_no_tooltip_plural:0 "Витязи"
   
   # Lowercase versions
  knight_default_no_tooltip_lowercase:0 "рыцарь"
@@ -61,10 +64,15 @@
  knight_hetaeria_no_tooltip_lowercase_plural_possessive:0 "гетайров"
  knight_hetaeria_no_tooltip_lowercase_adjective:0 "гетайрск"
 
+ knight_vityaz_no_tooltip_lowercase:0 "витязь"
+ knight_vityaz_no_tooltip_lowercase_plural:0 "витязи"
+ knight_vityaz_no_tooltip_lowercase_plural_possessive:0 "витязей"
+ knight_vityaz_no_tooltip_lowercase_adjective:0 "витязийск"
+
  knight_champion_no_tooltip_lowercase:0 "воитель"
  knight_champion_no_tooltip_lowercase_plural:0 "воители"
  knight_champion_no_tooltip_lowercase_plural_possessive:0 "воителей"
- knight_champion_no_tooltip_lowercase_adjective:0 "воительск"
+ knight_champion_no_tooltip_lowercase_adjective:0 "воитель"
 
   #Game Concept versions
  knight_default:0 "[Concept( 'knight', '$knight_default_no_tooltip$' )|E]"
@@ -84,31 +92,12 @@
 
  knight_hetaeria:0 "[Concept( 'knight', '$knight_hetaeria_no_tooltip$' )|E]"
  knight_hetaeria_plural:0 "[Concept( 'knight', '$knight_hetaeria_no_tooltip_plural$' )|E]"
-
- knight_champion:0 "[Concept( 'knight', '$knight_champion_no_tooltip$' )|E]"
- knight_champion_plural:0 "[Concept( 'knight', '$knight_champion_no_tooltip_plural$' )|E]"
  
  knight_vityaz:0 "[Concept( 'knight', '$knight_vityaz_no_tooltip$' )|E]"
  knight_vityaz_plural:0 "[Concept( 'knight', '$knight_vityaz_no_tooltip_plural$' )|E]"
 
-  # Knight Culture (Slavic)
- knight_vityaz_plural:0 "Витязи"
- knight_vityaz_no_tooltip:0 "Витязь"
- knight_vityaz_no_tooltip_plural:0 "Витязи"
- knight_vityaz_no_tooltip_lowercase:0 "витязь"
- knight_vityaz_no_tooltip_lowercase_plural:0 "витязи"
- knight_vityaz_no_tooltip_lowercase_plural_possessive:0 "витязей"
- knight_vityaz_no_tooltip_lowercase_adjective:0 "витязь"
- knight_vityaz_no_tooltip_lowercase_plural_adjective:0 "воинская"
- # Knight Culture (Germanic)
- knight_steersman:0 "[Concept( 'knight', '$knight_steersman_no_tooltip$' )|E]"
- knight_steersman_plural:0 "[Concept( 'knight', '$knight_steersman_no_tooltip_plural$' )|E]"
- #knight_steersman_plural:0 "Стирэсманы"
- knight_steersman_no_tooltip:0 "Стирэсман"
- knight_steersman_no_tooltip_plural:0 "Стирэсманы"
- knight_steersman_no_tooltip_lowercase:0 "стирэсман"
- knight_steersman_no_tooltip_lowercase_plural:0 "стирэсманы"
- knight_steersman_no_tooltip_lowercase_plural_possessive:0 "cтирэсманов"
- knight_steersman_no_tooltip_lowercase_adjective:0 "стирэсман"
- knight_steersman_no_tooltip_lowercase_plural_adjective:0 "воинская"
- #############################################
+ knight_champion:0 "[Concept( 'knight', '$knight_champion_no_tooltip$' )|E]"
+ knight_champion_plural:0 "[Concept( 'knight', '$knight_champion_no_tooltip_plural$' )|E]"
+
+
+

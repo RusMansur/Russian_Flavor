@@ -52,6 +52,10 @@
  councillor_marshal_russian:0 "Воевода"
 
  russian_councillor_marshal_possessive:0 Воевода
+ 
+ councillor_chancellor_turkic:0 "Визирь"
+ councillor_steward_turkic:0 "Дефтедар"
+ councillor_marshal_turkic:0 "Великий ага"
 
 #Flavor localization for Court Chaplains, sorted by Religion.
 
