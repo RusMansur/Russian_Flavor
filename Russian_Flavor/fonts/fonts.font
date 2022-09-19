@@ -172,7 +172,7 @@ fontfiles = {
 
 	group = {
 		languages = { "l_russian" }
-		files = { "fonts/Fondamento/Fondamento-Regular.ttf" "fonts/Fondamento/Fondamento-Regular.ttf" "fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf" "fonts/Noto_Sans_SC/NotoSansSC-Bold.otf" "fonts/Korean_fontset/ON_YeossiB.ttf" }
+		files = { "fonts/Izitsa/Izhitsa_Normal.ttf" "fonts/Izitsa/Izhitsa_Normal.ttf" "fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf" "fonts/Noto_Sans_SC/NotoSansSC-Bold.otf" "fonts/Korean_fontset/ON_YeossiB.ttf" }
 	}
 
 	group = {
@@ -198,7 +198,7 @@ fontfiles = {
 
 	group = {
 		languages = { "l_russian" }
-		files = { "fonts/ParadoxKingScript/ParadoxKingScript-Regular.ttf" "fonts/mapfont/Paradox_King_Script.otf" "fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf" "fonts/Noto_Sans_SC/NotoSansSC-Bold.otf" "fonts/Korean_fontset/GunglipbakmulgwanClassicB.ttf" }
+		files = { "fonts/Izitsa/Izhitsa_Normal.ttf" "fonts/Izitsa/Izhitsa_Normal.ttf" "fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf" "fonts/Noto_Sans_SC/NotoSansSC-Medium.otf" "fonts/Korean_fontset/GunglipbakmulgwanClassicB.ttf" }
 	}
 
 	group = {
@@ -224,7 +224,7 @@ fontfiles = {
 
 	group = {
 		languages = { "l_russian" }
-		files = { "fonts/HienrichScript/HienrichScript.ttf" }
+		files = { "fonts/HienrichScript/HienrichScript.ttf" "fonts/Open_Sans/OpenSans-SemiBold.ttf" "fonts/Noto_Sans_SC/NotoSansSC-Medium.otf" "fonts/Korean_fontset/IropkeBatangM.ttf" }
 	}
 
 	group = {
