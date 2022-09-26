@@ -78,6 +78,16 @@
     duke_female_turkish:0 "Ханым"
     duke_male_child_turkish:0 "Мурза"
     
+    kingdom_turkish:0 "Ханство"
+    king_male_turkish:0 "Хан"
+    king_female_turkish:0 "Ханбике"
+    king_male_child_turkish:0 "Ханзаде"
+    
+    empire_turkish:0 "Каганат"
+    emperor_male_turkish:0 "Каган"
+    emperor_female_turkish:0 "Хатун"
+    emperor_male_child_turkish:0 "Каганзаде"
+    
  #Default Feudal tiers 
  #Default Republic tiers
  #Default Theocracy tiers
